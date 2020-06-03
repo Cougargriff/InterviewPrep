@@ -1,0 +1,79 @@
+\documentclass[]{article}
+\usepackage[margin=1in]{geometry}
+
+
+%opening
+\title{Interview Prep}
+\author{Griffin Johnson}
+
+\newcommand{\bigO}[1]{ $\mathcal{O}({#1})$}
+\newcommand{\n}{ $\mathcal{O}(n)$}
+\newcommand{\nexp}[1]{ $\mathcal{O}(n^{{#1}})$}
+\newcommand{\nlogn}{ $\mathcal{O}(n\log{}n)$}
+\newcommand{\logn}{ $\mathcal{O}(\log{}n)$}
+
+\newcommand{\impl}{\subsubsection{Implementation}}
+\newcommand{\ops}{\subsubsection{Operations}}
+
+\begin{document}
+
+\maketitle
+
+\section{Data Structures}
+
+\subsection{Linked Lists}
+\impl
+\begin{verbatim}
+LinkedList<Integer> ll = new LinkedList<>();
+\end{verbatim}
+\ops
+
+\subsection{Trees, Tries, \& Graphs}
+\impl
+
+
+\subsection{Stacks \& Queues}
+\impl
+\begin{verbatim}
+Queue<Integer> queue = new LinkedList<>();
+Deque<Integer> stack = new ArrayDeque<Integer>();
+\end{verbatim}
+\ops
+
+\subsection{Heaps}
+\impl
+\begin{verbatim}
+	Queue<Integer> heap = new PriorityQueue<>((n1, n2) -> count.get(n1) - count.get(n2));
+\end{verbatim}
+\paragraph{
+This is a paragraph. It is underneath the heaps category. Heaps are data structures that keep a min or max value ready for popping locking and/or dropping.
+}
+\ops
+
+\subsection{Vectors / ArrayLists}
+\impl
+\begin{verbatim}
+	ArrayList<Integer> arraylist = new ArrayList<>();
+\end{verbatim}
+\ops
+
+\subsection{Hash Tables}
+\impl
+\begin{verbatim}
+	HashMap<Integer, Integer> hashmap = new HashMap<>();
+\end{verbatim}
+\ops
+
+\section{Algorithms}
+\subsection{Breadth-First Search}
+
+\subsection{Depth-First Search}
+
+\subsection{Binary Search}
+
+\subsection{Merge Sort}
+
+\subsection{Quick Sort}
+
+
+\end{document}
